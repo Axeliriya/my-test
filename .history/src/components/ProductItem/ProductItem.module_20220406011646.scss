@@ -1,0 +1,36 @@
+@import '../../assets/styles/main.scss';
+
+// .card {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+//   border-radius: 8px;
+//   @include font(400, 11px);
+// }
+
+// .span {
+//   color: $light-color;
+// }
+
+// .link {
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   padding: 10px;
+
+//   @extend %link;
+//   @include font(400, 12px);
+//   color: $accent-color;
+
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// }
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}

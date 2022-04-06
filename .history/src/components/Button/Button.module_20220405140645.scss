@@ -1,0 +1,27 @@
+@import '../../assets/styles/main.scss';
+
+.button {
+  @extend %btn;
+}
+$secondery-color: #3c336c;
+$accent-color: #309f85;
+$light-color: #c4c4c4;
+.primary {
+  // @include font(400, 12px);
+  // background-color: $secondery-color;
+  // color: $primary-color;
+  // align-self: flex-start;
+  // &:hover {
+  //   opacity: 0.7;
+  // }
+}
+
+// .green {
+//   background-color: $success-color;
+//   color: $primary-color;
+// }
+
+// .ghost {
+//   background-color: $light-color;
+//   color: $primary-color;
+// }

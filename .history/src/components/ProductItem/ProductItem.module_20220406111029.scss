@@ -1,0 +1,31 @@
+@import '../../assets/styles/main.scss';
+
+.item {
+  background-color: $primary-color;
+  border-radius: 12px;
+}
+
+.wrapper {
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.owner {
+}
+
+.decr {
+}
+
+.name {
+}
+
+.quantity {
+}
+
+.price {
+}

@@ -1,0 +1,13 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+@media screen and (min-width: 520px) {
+  .main {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 2 / 3;
+  }
+}

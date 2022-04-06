@@ -1,0 +1,74 @@
+@import '../../assets/styles/main.scss';
+
+.item {
+  position: relative;
+  background-color: $primary-color;
+  border-radius: 12px;
+  align-self: self-start;
+  overflow: hidden;
+}
+
+// .wrapper {
+
+// }
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.owner {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: $primary-color;
+  border-radius: 4px;
+  @include font(400, 12px, 1.05);
+}
+
+.decr {
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 10px;
+}
+
+.name {
+  @include font(600, 16px, 1.05);
+  grid-column: 1 / -1;
+}
+
+.quantity {
+  display: grid;
+  grid-column: 1 / 2;
+}
+
+.price {
+  display: grid;
+  grid-column: 2 / -1;
+  @include font(600, 16px, 1.05);
+  color: $light-color;
+  justify-self: end;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.link {
+  @extend %link;
+  @include font(400, 14px, 1.05);
+  padding: 4px 12px;
+  border-radius: 6px;
+  background-color: $alternate-bg-color;
+  color: $secondery-text-color;
+}

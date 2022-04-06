@@ -1,0 +1,26 @@
+@import '../../assets/styles/main.scss';
+
+.button {
+  @extend %btn-icon;
+}
+$secondery-color: #3c336c;
+$accent-color: #309f85;
+$light-color: #c4c4c4;
+.primary {
+  @extend %btn;
+
+  background-color: $secondery-color;
+  // &:hover {
+  //   opacity: 0.7;
+  // }
+}
+
+// .green {
+//   background-color: $success-color;
+//   color: $primary-color;
+// }
+
+// .ghost {
+//   background-color: $light-color;
+//   color: $primary-color;
+// }

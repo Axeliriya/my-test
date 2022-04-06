@@ -1,0 +1,46 @@
+@import '../../assets/styles/main.scss';
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(250, 251, 253, 0.44);
+  padding: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  @extend %link;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 105.5%;
+  color: $primary-text-color;
+  &:hover {
+    color: $secondery-text-color;
+  }
+}
+
+.input {
+  width: 100%;
+  margin-right: 10px;
+}
+
+// @media screen and (min-width: 520px) {
+//   .app {
+//     grid-template-columns: auto 1fr auto;
+//   }
+// }
+
+// @media screen and (min-width: 682px) {
+//   .app {
+//     grid-template-columns: auto 665px auto;
+//   }
+// }

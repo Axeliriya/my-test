@@ -1,0 +1,16 @@
+@import '../../assets/styles/main.scss';
+
+.users {
+  display: grid;
+  gap: 20px;
+
+  @extend %list;
+}
+
+@media screen and (min-width: 520px) {
+  // .main {
+  //   grid-template-columns: auto 1fr;
+  //   grid-template-rows: 1fr;
+  //   grid-column: 2 / 3;
+  // }
+}

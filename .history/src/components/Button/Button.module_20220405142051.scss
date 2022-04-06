@@ -1,0 +1,27 @@
+@import '../../assets/styles/main.scss';
+
+.button {
+  @extend %btn-icon;
+}
+$secondery-color: #3c336c;
+$accent-color: #309f85;
+$light-color: #c4c4c4;
+.primary,
+.green,
+.ghost {
+  @extend %btn;
+  background-color: $secondery-color;
+  &:hover {
+    padding: 14px 20px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 55px;
+  }
+}
+
+.green {
+  background-color: $accent-color;
+}
+
+.ghost {
+  background-color: $light-color;
+}

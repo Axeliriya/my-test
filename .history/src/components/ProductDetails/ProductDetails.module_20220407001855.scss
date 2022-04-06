@@ -1,0 +1,15 @@
+@import '../../assets/styles/main.scss';
+.main {
+    display: grid;
+    gap: 20px;
+    position: relative;
+    padding: 100px 20px 20px 20px;
+    grid-column: 1 / -1;
+  }
+  
+  @media screen and (min-width: 1240px) {
+    .main {
+      display: grid;
+      grid-template-columns: auto 1140px auto;
+    }
+  }

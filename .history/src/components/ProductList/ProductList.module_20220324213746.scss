@@ -1,0 +1,8 @@
+@import '../../assets/styles/main.scss';
+
+.users {
+  display: grid;
+  gap: 12px;
+
+  @extend %list;
+}

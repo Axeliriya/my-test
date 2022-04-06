@@ -1,0 +1,24 @@
+@import '../../assets/styles/main.scss';
+
+.products {
+  display: grid;
+  gap: 20px;
+
+  @extend %list;
+}
+
+@media screen and (min-width: 480px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}

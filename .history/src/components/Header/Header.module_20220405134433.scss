@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  background: rgba(250, 251, 253, 0.44);
+  padding: 20px;
+  grid-column: 1 / -1;
+}
+
+// @media screen and (min-width: 520px) {
+//   .app {
+//     grid-template-columns: auto 1fr auto;
+//   }
+// }
+
+// @media screen and (min-width: 682px) {
+//   .app {
+//     grid-template-columns: auto 665px auto;
+//   }
+// }

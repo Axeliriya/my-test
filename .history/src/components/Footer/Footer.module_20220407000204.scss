@@ -1,0 +1,9 @@
+@import '../../assets/styles/main.scss';
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  grid-column: 1 / -1;
+}

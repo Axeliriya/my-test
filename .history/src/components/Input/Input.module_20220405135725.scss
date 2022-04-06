@@ -1,0 +1,41 @@
+@import '../../assets/styles/main.scss';
+
+.wrapper {
+  position: relative;
+  padding-top: 12px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include font(400, 8px);
+}
+
+.input {
+  width: 100%;
+  @extend %input;
+  @include font(400, 10px);
+  outline: none;
+  &:focus {
+    border: 1px solid $primary-text-color;
+  }
+  &:read-only {
+    color: $light-color;
+    outline: none;
+    border: 1px solid #d8d8d8;
+    cursor: default;
+  }
+  &:focus.error,
+  &.error {
+    border: 1px solid $error-color;
+  }
+}
+
+.messageError {
+  position: absolute;
+  color: $error-color;
+  @include font(400, 8px);
+  bottom: -9px;
+  left: 0;
+}

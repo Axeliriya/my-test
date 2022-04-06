@@ -1,0 +1,25 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.sort {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+@media screen and (min-width: 520px) {
+  .main {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 2 / 3;
+  }
+}

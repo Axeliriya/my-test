@@ -1,0 +1,17 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  background-color: $primary-color;
+  color: $primary-text-color;
+  @include font(400, 11px);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

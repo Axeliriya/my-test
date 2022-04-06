@@ -1,0 +1,54 @@
+@import '../../assets/styles/main.scss';
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-column: 1 / -1;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  border: 1px solid $secondery-color;
+  box-sizing: border-box;
+  border-radius: 8px;
+  grid-column: 1 / -1;
+}
+
+.btn_primary {
+  justify-self: end;
+}
+
+.btn {
+  grid-column: 2 / -1;
+  justify-self: end;
+  &:disabled {
+    cursor: default;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .profile {
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
+  }
+
+  .input {
+    grid-column: 1 / 2;
+  }
+
+  .textarea {
+    grid-column: 1 / -1;
+  }
+}

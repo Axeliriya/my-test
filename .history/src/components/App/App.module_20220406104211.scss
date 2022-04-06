@@ -1,0 +1,17 @@
+@import '../../assets/styles/main.scss';
+
+.app {
+  background-color: $alternate-bg-color;
+}
+
+@media screen and (min-width: 520px) {
+  .app {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+@media screen and (min-width: 682px) {
+  .app {
+    grid-template-columns: auto 665px auto;
+  }
+}

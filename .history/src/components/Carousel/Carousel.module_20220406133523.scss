@@ -1,0 +1,24 @@
+@import '../../assets/styles/main.scss';
+
+.container {
+  position: relative;
+}
+
+.window {
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  display: flex;
+  height: 100%;
+}
+
+.btn {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50%;
+}

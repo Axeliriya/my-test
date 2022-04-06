@@ -1,0 +1,15 @@
+@import '../../assets/styles/main.scss';
+.info {
+  display: grid;
+  gap: 20px;
+}
+
+.img {
+  width: 250px;
+}
+
+@media screen and (min-width: 1240px) {
+  .info {
+    grid-column: 2 / -2;
+  }
+}
