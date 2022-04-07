@@ -25,7 +25,10 @@
   position: absolute;
   top: 20px;
   left: 20px;
+  padding: 5px;
+  // background-color: rgb(0, 0, 0, 0.4);
   color: $primary-color;
+  // border-radius: 4px;
   @include font(400, 12px, 1.05);
   span {
     @include font(600, 14px);

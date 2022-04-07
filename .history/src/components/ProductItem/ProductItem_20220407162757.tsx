@@ -54,10 +54,10 @@ export const ProductItem = ({
           created by <br />
           <span>{product.created_by.display_name}</span>
         </span>
-        <span className={styles.name}>{product.name}</span>
       </div>
 
       <div className={styles.decr}>
+        <span className={styles.name}>{product.name}</span>
         <span className={styles.quantity}>
           <span>available: </span>
           <span>{product.quantity_available} of 50</span>
