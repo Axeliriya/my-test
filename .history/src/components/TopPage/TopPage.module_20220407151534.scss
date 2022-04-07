@@ -1,0 +1,34 @@
+@import '../../assets/styles/main.scss';
+
+.container {
+  background: url('../../assets/img/bg.png') no-repeat 0 -30px;
+  height: 100%;
+}
+
+.heroes {
+  padding: 40px;
+}
+
+.title {
+  margin: 0;
+  @include font(700, 48px);
+}
+
+.link {
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    grid-column: 2 / -2;
+  }
+
+  .error {
+    grid-column: 2 / -2;
+  }
+}

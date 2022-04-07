@@ -1,0 +1,52 @@
+@import '../../assets/styles/main.scss';
+
+.container {
+  display: grid;
+  gap: 20px;
+  background: url('../../assets/img/bg.png') no-repeat 0 -30px;
+  height: 100%;
+}
+
+.heroes {
+  padding: 40px;
+}
+
+.title {
+  margin: 0;
+  @include font(700, 48px);
+}
+
+.link {
+  justify-self: flex-end;
+  @extend %link;
+  @include font(400, 18px);
+  color: $primary-text-color;
+  transition: all $cubic;
+  svg {
+    width: 32px;
+    height: 9px;
+  }
+
+  &:hover {
+    color: $secondery-text-color;
+    svg : {
+      fill: $secondery-text-color;
+    }
+  }
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    grid-column: 2 / -2;
+  }
+
+  .error {
+    grid-column: 2 / -2;
+  }
+}

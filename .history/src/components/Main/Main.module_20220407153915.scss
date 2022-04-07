@@ -2,7 +2,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: 255px;
+  grid-template-columns: 260px;
   gap: 20px;
   margin: 0 auto;
   position: relative;
@@ -22,14 +22,6 @@
   .main {
     display: grid;
     grid-template-columns: auto 480px auto;
-    grid-auto-rows: min-content;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .main {
-    display: grid;
-    grid-template-columns: auto 768px auto;
     grid-auto-rows: min-content;
   }
 }

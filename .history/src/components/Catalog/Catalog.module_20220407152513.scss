@@ -1,17 +1,11 @@
 @import '../../assets/styles/main.scss';
 
-.container {
-  display: grid;
-  gap: 20px;
-  background: url('../../assets/img/bg.png') no-repeat 0 -30px;
-}
-
 .available {
   align-content: flex-start;
   justify-self: end;
   align-self: center;
   align-self: flex-start;
-
+  background: url('../../assets/img/bg.png') no-repeat 0 -30px;
   & button:first-child {
     margin: 10px;
   }
@@ -29,22 +23,16 @@
   align-items: flex-start;
 }
 
-@media screen and (min-width: 420px) {
-  .container {
-    grid-column: 2 / -2;
-  }
-
-  .error {
-    grid-column: 2 / -2;
-  }
-}
-
 @media screen and (min-width: 1240px) {
   .available {
     grid-column: 2 / -2;
   }
 
   .more {
+    grid-column: 2 / -2;
+  }
+
+  .error {
     grid-column: 2 / -2;
   }
 }

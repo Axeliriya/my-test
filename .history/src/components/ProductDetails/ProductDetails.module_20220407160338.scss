@@ -9,6 +9,7 @@
 .wrapper {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .card {
@@ -19,6 +20,7 @@
 
 .name {
   @include font(700, 16px);
+  margin-top: 20px;
 }
 
 .subtitle {
@@ -52,40 +54,32 @@
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper {
-    width: 240px;
-    justify-self: center;
-  }
-}
+  // .card {
+  //   grid-template-columns: auto 1fr;
+  //   grid-auto-flow: dense;
+  // }
 
-@media screen and (min-width: 1000px) {
-  .wrapper {
-    width: 240px;
-    justify-self: flex-start;
-    grid-column: 1 / 2;
-  }
+  // .wrapper {
+  //   grid-row: 1 / 4;
+  // }
 
-  .card {
-    grid-template-columns: auto 1fr;
-    grid-auto-flow: dense;
-    grid-auto-rows: min-content;
-  }
+  // .name {
+  //   grid-column: 1 / 2;
+  // }
 
-  .name {
-    grid-column: 1 / 2;
-  }
+  // .bio {
+  //   grid-column: 2 / -1;
+  // }
 
-  .bio {
-    grid-column: 2 / -1;
-  }
+  // .price {
+  //   grid-column: 2 / -1;
+  // }
 
-  .descr {
-    grid-column: 1 / -1;
-  }
-}
+  // .available {
+  //   grid-column: 2 / -1;
+  // }
 
-@media screen and (min-width: 1240px) {
-  .wrapper {
-    width: 280px;
-  }
+  // .descr {
+  //   grid-column: 1 / -1;
+  // }
 }

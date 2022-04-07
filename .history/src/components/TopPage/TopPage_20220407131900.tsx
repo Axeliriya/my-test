@@ -77,7 +77,7 @@ export const Catalog = (): JSX.Element => {
   return (
     <>
       {products && (
-        <div className={styles.container}>
+        <>
           <div className={styles.available}>
             <Button
               className={isFiltered ? '' : 'focus'}
@@ -106,7 +106,7 @@ export const Catalog = (): JSX.Element => {
           >
             {isLoading ? 'Loading...' : 'More'}
           </Button>
-        </div>
+        </>
       )}
     </>
   );

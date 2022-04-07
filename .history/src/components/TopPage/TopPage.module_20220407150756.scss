@@ -1,0 +1,21 @@
+@import '../../assets/styles/main.scss';
+
+.heroes {
+  background: url('../../assets/img/bg.png') no-repeat -220px 0;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1240px) {
+  .heroes {
+    grid-column: 2 / -2;
+  }
+
+  .error {
+    grid-column: 2 / -2;
+  }
+}

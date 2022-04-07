@@ -29,22 +29,20 @@
   align-items: flex-start;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 1240px) {
   .container {
     grid-column: 2 / -2;
   }
 
-  .error {
-    grid-column: 2 / -2;
-  }
-}
-
-@media screen and (min-width: 1240px) {
   .available {
     grid-column: 2 / -2;
   }
 
   .more {
+    grid-column: 2 / -2;
+  }
+
+  .error {
     grid-column: 2 / -2;
   }
 }

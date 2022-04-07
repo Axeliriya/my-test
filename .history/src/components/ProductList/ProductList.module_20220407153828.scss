@@ -22,13 +22,6 @@
     gap: 20px;
   }
 }
-@media screen and (min-width: 1000px) {
-  .products {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
-}
 
 @media screen and (min-width: 1240px) {
   .products {

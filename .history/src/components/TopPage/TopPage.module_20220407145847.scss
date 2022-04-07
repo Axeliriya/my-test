@@ -1,0 +1,15 @@
+@import '../../assets/styles/main.scss';
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1240px) {
+
+
+  .error {
+    grid-column: 2 / -2;
+  }
+}

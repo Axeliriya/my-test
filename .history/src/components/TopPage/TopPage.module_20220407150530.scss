@@ -1,0 +1,22 @@
+@import '../../assets/styles/main.scss';
+
+.heroes {
+  background: url('./assets/img/bcgruond.png') no-repeat 0 0,
+    url('./assets/img/wave.png') no-repeat 0 200px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1240px) {
+  .heroes {
+    grid-column: 2 / -2;
+  }
+
+  .error {
+    grid-column: 2 / -2;
+  }
+}
