@@ -1,0 +1,23 @@
+@import '../../assets/styles/main.scss';
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.modal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 70%;
+  height: 100%;
+  padding: 100px 20px;
+  background: $alternate-bg-color;
+}

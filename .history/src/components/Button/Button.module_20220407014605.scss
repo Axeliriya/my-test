@@ -1,0 +1,38 @@
+@import '../../assets/styles/main.scss';
+
+.button {
+  @extend %btn-icon;
+}
+
+.button svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.primary {
+  @extend %btn;
+  border: 1px solid $secondery-color;
+  background-color: $alternate-bg-color;
+  &:hover {
+    border: 1px solid $secondery-color;
+    background-color: $secondery-color;
+    color: $primary-color;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.green {
+  border: 1px solid $accent-color;
+  background-color: $alternate-bg-color;
+  &:hover {
+    border: 1px solid $secondery-color;
+    background-color: $accent-color;
+    color: $primary-color;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.ghost {
+  background-color: $light-color;
+}

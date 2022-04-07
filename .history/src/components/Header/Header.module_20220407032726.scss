@@ -1,0 +1,38 @@
+@import '../../assets/styles/main.scss';
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(250, 251, 253, 0.8);
+  padding: 20px;
+  z-index: 10;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.logo {
+  @extend %link;
+  @include font(700, 36px, 1.05);
+  color: $primary-text-color;
+  &:hover {
+    color: $secondery-text-color;
+  }
+}
+
+.catalog {
+  @extend %link;
+  @include font(600, 24px, 1.05);
+  color: $primary-text-color;
+  &:hover {
+    color: $secondery-text-color;
+  }
+}

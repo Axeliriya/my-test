@@ -1,0 +1,35 @@
+@import '../../assets/styles/main.scss';
+.info {
+  display: grid;
+  gap: 20px;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 220px;
+}
+
+.name {
+}
+
+.bio {
+}
+
+.contacts {
+}
+
+.price {
+}
+
+.available {
+}
+
+.descr {
+}
+
+@media screen and (min-width: 1240px) {
+  .info {
+    grid-column: 2 / -2;
+  }
+}

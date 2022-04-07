@@ -1,0 +1,69 @@
+@import '../../assets/styles/main.scss';
+.info {
+  display: grid;
+  gap: 20px;
+  @include font(400, 14px, 1.05);
+  color: $secondery-text-color;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 220px;
+}
+
+.card {
+  display: grid;
+  gap: 15px;
+}
+
+.name {
+  @include font(700, 16px);
+  margin-top: 20px;
+}
+
+.subtitle {
+  @include font(600, 14px);
+}
+
+.bio {
+  display: grid;
+  gap: 10px;
+}
+
+.contacts {
+  font-style: italic;
+}
+
+.price {
+  @include font(600, 16px);
+  color: $light-color;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .bio {
+    grid-column: 2 / -1;
+  }
+
+  // .price {
+  //   grid-column: 2 / -1;
+  // }
+
+  // .available {
+  //   grid-column: 2 / -1;
+  // }
+
+  .descr {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .info {
+    grid-column: 2 / -2;
+  }
+}

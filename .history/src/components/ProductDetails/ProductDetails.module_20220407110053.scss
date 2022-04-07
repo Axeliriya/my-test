@@ -1,0 +1,50 @@
+@import '../../assets/styles/main.scss';
+.info {
+  display: grid;
+  gap: 20px;
+  @include font(400, 14px, 1.05);
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 220px;
+}
+
+.card {
+  display: grid;
+  gap: 15px;
+}
+
+.name {
+  @include font(700, 16px);
+}
+
+.subtitle {
+  @include font(600, 14px);
+}
+
+.bio {
+  display: grid;
+  gap: 10px;
+}
+
+.contacts {
+  font-style: italic;
+}
+
+.price {
+  @include font(600, 14px);
+}
+
+.available {
+}
+
+.descr {
+}
+
+@media screen and (min-width: 1240px) {
+  .info {
+    grid-column: 2 / -2;
+  }
+}

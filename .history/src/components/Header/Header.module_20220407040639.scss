@@ -1,0 +1,43 @@
+@import '../../assets/styles/main.scss';
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $alternate-bg-color;
+  padding: 20px;
+  z-index: 999;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.logo {
+  @extend %link;
+  @include font(700, 36px, 1.05);
+  color: $primary-text-color;
+  &:hover {
+    color: $secondery-text-color;
+  }
+}
+
+.catalog {
+  @extend %link;
+  @include font(600, 24px, 1.05);
+  color: $primary-text-color;
+  &:hover {
+    color: $secondery-text-color;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .header {
+    justify-content: space-around;
+  }
+}

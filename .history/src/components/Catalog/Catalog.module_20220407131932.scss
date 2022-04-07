@@ -1,0 +1,33 @@
+@import '../../assets/styles/main.scss';
+
+.available {
+  align-content: flex-start;
+  justify-self: end;
+  align-self: center;
+  align-self: flex-start;
+  & button:first-child {
+    margin: 10px;
+  }
+}
+
+.more {
+  justify-self: center;
+  align-self: center;
+  align-self: flex-end;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1240px) {
+  .available {
+    grid-column: 2 / -2;
+  }
+
+  .more {
+    grid-column: 2 / -2;
+  }
+}

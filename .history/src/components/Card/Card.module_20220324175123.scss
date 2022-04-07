@@ -1,0 +1,16 @@
+@import '../../assets/styles/main.scss';
+
+.card {
+  background: $primary-color;
+  padding: 20px;
+}
+
+.gray {
+  background: $alternate-bg-color;
+  @include font(400, 12px, 1.16);
+}
+
+.light {
+  background-color: $secondery-color;
+  padding: 10px;
+}

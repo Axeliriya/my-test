@@ -6,6 +6,9 @@
   align-self: center;
   align-self: flex-start;
 }
+.available:first-child {
+  margin: 10px;
+}
 
 .more {
   justify-self: center;

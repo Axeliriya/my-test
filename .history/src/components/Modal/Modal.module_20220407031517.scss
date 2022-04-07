@@ -1,0 +1,13 @@
+@import '../../assets/styles/main.scss';
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  top: 80px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255, 0.3);
+}

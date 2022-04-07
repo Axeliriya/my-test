@@ -63,24 +63,41 @@ export const Сatalog = (): JSX.Element => {
   };
 
   const filteredAvailble = () => {
-    setIsFiltered(!isFiltered);
+    setIsFiltered(true);
     const filteredList = fullList?.filter(
       product => product.quantity_available > 0,
     );
     setFiltered(filteredList);
   };
 
+  const notFiltered = () => {
+    setIsFiltered(false);
+    // const filteredList = fullList?.filter(
+    //   product => product.quantity_available > 0,
+    // );
+    // setFiltered(filteredList);
+  };
+
   return (
     <>
       {products && (
         <>
-          <Button
-            className={styles.available}
-            appearance="primary"
-            onClick={filteredAvailble}
-          >
-            available
-          </Button>
+          <div className={styles.available}>
+            <Button
+              className={isFiltered ? '' : 'focus'}
+              appearance="primary"
+              onClick={filteredAvailble}
+            >
+              All
+            </Button>
+            <Button
+              className={isFiltered ? 'focus' : ''}
+              appearance="primary"
+              onClick={notFiltered}
+            >
+              Available
+            </Button>
+          </div>
           <ProductList products={products} />
           <Button
             className={styles.more}
